@@ -3,6 +3,8 @@
   "item.farmhand.corn_kernal": "Corn Kernals",
 
   "block.farmhand.corn_test": "Corn Bottom",
+  "block.farmhand.corn_middle": "Corn Middle",
+  "block.farmhand.corn_top": "Corn Top",
 
   "itemGroup.farmhandcropstab": "Farmhand Crops"
 }

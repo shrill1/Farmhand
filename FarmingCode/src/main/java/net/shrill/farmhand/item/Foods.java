@@ -8,6 +8,4 @@ public class Foods { // Foods class for registering food items, seperate to keep
             .saturationMod(0.6f)
             .alwaysEat()
             .build();
-
-
 }

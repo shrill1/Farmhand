@@ -1,4 +1,4 @@
-package net.shrill.farmhand.item;
+package net.shrill.farmhand.blocks;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -12,11 +12,14 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegistryObject;
 import net.shrill.farmhand.Farmhand;
+import net.shrill.farmhand.item.ModCreativeModeTab;
+import net.shrill.farmhand.item.ModItems;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
 
+    // REGISTERING METHODS
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Farmhand.MOD_ID);
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
