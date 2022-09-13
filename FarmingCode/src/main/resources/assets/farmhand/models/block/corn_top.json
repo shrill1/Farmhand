@@ -1,6 +1,6 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/crop",
   "textures": {
-    "all": "farmhand:block/corn_top"
+    "crop": "farmhand:block/corn_top"
   }
 }
