@@ -12,8 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.shrill.farmhand.Farmhand;
-import net.shrill.farmhand.blocks.custom.CaneCornCrop;
-import net.shrill.farmhand.blocks.custom.CropCorn;
+import net.shrill.farmhand.blocks.custom.CaneCrop;
 import net.shrill.farmhand.item.FHCreativeModeTab;
 import net.shrill.farmhand.item.FHItems;
 
@@ -39,7 +38,7 @@ public class FHBlocks {
             .strength(6f).requiresCorrectToolForDrops()), FHCreativeModeTab.FARMHAND_CROPS);
 
     //CROP BLOCKS
-    public static final RegistryObject<Block> CORN_CROP = BLOCKS.register("corn_crop", () -> new CaneCornCrop(BlockBehaviour.Properties.copy(Blocks.SUGAR_CANE)));
+    public static final RegistryObject<Block> CORN_CROP = BLOCKS.register("corn_crop", () -> new CaneCrop(BlockBehaviour.Properties.copy(Blocks.SUGAR_CANE)));
 
 
     // BLOCK ITEM HELPER METHODS TO REGISTER BLOCKS AS ITEMS
