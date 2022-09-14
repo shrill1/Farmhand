@@ -1,8 +1,9 @@
 {
-  "item.farmhand.corn": "Corn",
+  "item.farmhand.corn_cob": "Corn Cob",
+  "item.farmhand.corn_unshucked": "Unshucked Corn Cob",
   "item.farmhand.corn_kernal": "Corn Kernals",
 
-  "block.farmhand.corn_test": "Corn Bottom",
+  "block.farmhand.corn_bottom": "Corn Bottom",
   "block.farmhand.corn_middle": "Corn Middle",
   "block.farmhand.corn_top": "Corn Top",
 

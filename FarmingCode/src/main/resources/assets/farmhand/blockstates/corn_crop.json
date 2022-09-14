@@ -1,7 +1,7 @@
 {
   "variants": {
-    "age=0": {"model": "farmhand:block/corn_test"},
-    "age=1": {"model": "farmhand:block/corn_middle"},
-    "age=2": {"model": "farmhand:block/corn_top"}
+    "growth=0": {"model": "farmhand:block/corn_bottom"},
+    "growth=1": {"model": "farmhand:block/corn_middle"},
+    "growth=2": {"model": "farmhand:block/corn_top"}
   }
 }

@@ -7,10 +7,10 @@
   ],
   "key": {
     "#": {
-      "item": "farmhand:corn"
+      "item": "farmhand:corn_cob"
     }
   },
   "result": {
-    "item": "farmhand:corn_test"
+    "item": "farmhand:corn_top"
   }
 }

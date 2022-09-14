@@ -15,15 +15,12 @@
                   "condition": "minecraft:block_state_property",
                   "block": "farmhand:corn_crop",
                   "properties": {
-                    "age": "3"
+                    "growth": "2",
+                    "has_grown": "false"
                   }
                 }
               ],
-              "name": "farmhand:corn"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "farmhand:corn_kernal"
+              "name": "farmhand:corn_cob"
             }
           ]
         }
@@ -34,28 +31,47 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "parameters": {
-                "extra": 3,
-                "probability": 0.5714286
-              }
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "farmhand:corn_crop",
+                  "properties": {
+                    "has_grown": "true"
+                  }
+                }
+              ],
+              "name": "farmhand:corn_cob"
             }
-          ],
-          "name": "farmhand:corn_kernal"
+          ]
         }
-      ],
-      "conditions": [
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
         {
-          "condition": "minecraft:block_state_property",
-          "block": "farmhand:corn_crop",
-          "properties": {
-            "age": "3"
-          }
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "farmhand:corn_crop",
+                  "properties": {
+                    "has_grown": "false",
+                    "growth": "0"
+                  }
+                }
+              ],
+              "name": "farmhand:corn_kernal"
+            }
+          ]
         }
       ]
     }

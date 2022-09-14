@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "farmhand:corn_cob"
+    }
+  ],
+  "result": {
+    "item": "farmhand:corn_kernal",
+    "count": 3
+  }
+}

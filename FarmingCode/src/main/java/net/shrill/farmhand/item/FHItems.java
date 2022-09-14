@@ -13,8 +13,11 @@ public class FHItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Farmhand.MOD_ID);
 
-    public static final RegistryObject<Item> CORN = ITEMS.register("corn",
-            () -> new Item(new Item.Properties().tab(FHCreativeModeTab.FARMHAND_CROPS).food(FarmhandFoods.Corn)));
+    public static final RegistryObject<Item> CORN_COB = ITEMS.register("corn_cob",
+            () -> new Item(new Item.Properties().tab(FHCreativeModeTab.FARMHAND_CROPS).food(FarmhandFoods.CORN_COB)));
+
+    public static final RegistryObject<Item> CORN_UNSHUCKED = ITEMS.register("corn_unshucked",
+            () -> new Item(new Item.Properties().tab(FHCreativeModeTab.FARMHAND_CROPS)));
 
     public static final RegistryObject<Item> CORN_KERNAL = ITEMS.register("corn_kernal",
             () -> new ItemNameBlockItem(FHBlocks.CORN_CROP.get(),
